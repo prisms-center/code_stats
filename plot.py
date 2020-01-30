@@ -95,8 +95,10 @@ def get_all_weekly_stats(db, dates, col):
         df.loc[:, repo_name] = weekly_unique_views
     return df
 
-def area_plot(df, title, saveas=None):
+def area_plot(df, title, fontsize=None, saveas=None):
     fig, ax = plt.subplots(figsize=(8,6))
+    plt.tick_params(axis='both', which='major', labelsize=fontsize)
+    fig.autofmt_xdate()
     cumsum_bottom = np.zeros(df.shape[0])
     linewidth = 2
     legend_handles = []
@@ -110,23 +112,24 @@ def area_plot(df, title, saveas=None):
         legend_handles.append((h3[0],))
         cumsum_bottom = copy.deepcopy(cumsum_top)
     ax.plot(df.index.values, np.zeros(df.shape[0]), color='black', linewidth=1, label=None)
-    ax.set_title(title)
-    ax.set_xlabel("Updated:" + str(datetime.date.today()))
+    #ax.set_title(title, fontsize=fontsize)
+    ax.set_ylabel(title, fontsize=fontsize)
+    #ax.set_xlabel("Updated:" + str(datetime.date.today()), fontsize=fontsize)
     legend_handles.reverse()
-    ax.legend(legend_handles, legend_values, loc='upper left')
+    ax.legend(legend_handles, legend_values, loc='upper left', fontsize=fontsize)
     if saveas:
         plt.savefig(saveas)
     return ax
 
-def make_plots(db, dates, colname, title):
+def make_plots(db, dates, colname, title, fontsize=None):
     df = get_all_weekly_stats(db, dates, colname)
     df.loc[:, "prisms-center/prisms_jobs"] += df.loc[:, "prisms-center/pbs"]
     df = df.drop(axis='columns', labels="prisms-center/pbs")
 
-    area_plot(df, title, saveas="images/" + colname + ".png")
-    area_plot(df.cumsum(), "Cumulative " + title, saveas="images/" + colname + "_cumulative.png")
+    area_plot(df, title, fontsize=fontsize, saveas="images/" + colname + ".png")
+    area_plot(df.cumsum(), "Cumulative " + title, fontsize=fontsize, saveas="images/" + colname + "_cumulative.png")
 
-def make_plots_excluding_travis_builds(db, dates, colname, title):
+def make_plots_excluding_travis_builds(db, dates, colname, title, fontsize=None):
     df = get_all_weekly_stats(db, dates, colname)
     df.loc[:, "prisms-center/prisms_jobs"] += df.loc[:, "prisms-center/pbs"]
     df = df.drop(axis='columns', labels="prisms-center/pbs")
@@ -142,8 +145,8 @@ def make_plots_excluding_travis_builds(db, dates, colname, title):
             df.loc[:, repo_name] = df.loc[:, repo_name] - travis_df.loc[:, repo_name]
             df.loc[df.loc[:, repo_name]<0, repo_name] = 0
 
-    area_plot(df, title, saveas="images/" + colname + "_exclude_travis_builds.png")
-    area_plot(df.cumsum(), "Cumulative " + title, saveas="images/" + colname + "_cumulative_exclude_travis_builds.png")
+    area_plot(df, title, saveas="images/" + colname + "_exclude_travis_builds.png", fontsize=fontsize)
+    area_plot(df.cumsum(), "Cumulative " + title, fontsize=fontsize, saveas="images/" + colname + "_cumulative_exclude_travis_builds.png")
 
 
 db = GithubStats()
@@ -153,10 +156,12 @@ dates = get_weekly_dates(db)
 if not os.path.exists("images"):
     os.mkdir("images")
 
-make_plots(db, dates, 'views', 'Weekly Views')
-make_plots(db, dates, 'unique_views', 'Weekly Unique Views')
-make_plots(db, dates, 'clones', 'Weekly Clones')
-make_plots(db, dates, 'unique_clones', 'Weekly Unique Clones')
-make_plots_excluding_travis_builds(db, dates, 'unique_clones', 'Weekly Unique Clones')
+fontsize = 14
+
+make_plots(db, dates, 'views', 'Weekly Views', fontsize=fontsize)
+make_plots(db, dates, 'unique_views', 'Weekly Unique Views', fontsize=fontsize)
+make_plots(db, dates, 'clones', 'Weekly Clones', fontsize=fontsize)
+make_plots(db, dates, 'unique_clones', 'Weekly Unique Clones', fontsize=fontsize)
+make_plots_excluding_travis_builds(db, dates, 'unique_clones', 'Weekly Unique Clones', fontsize=fontsize)
 
 db.close()
