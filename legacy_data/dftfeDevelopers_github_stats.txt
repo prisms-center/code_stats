@@ -1553,3 +1553,561 @@ dftfe  Total Statistics:
 		Visits		Unique Visits	Clones		Unique Clones
 		34		16		0		0
 
+
+--------- 
+GitHub statistics for the past week as of 2020-03-19-19h-17m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-03-12T00	4		3		0		0
+2020-03-13T00	12		3		0		0
+2020-03-14T00	0		0		0		0
+2020-03-15T00	1		1		0		0
+2020-03-16T00	6		2		0		0
+2020-03-17T00	0		0		0		0
+2020-03-18T00	2		2		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		25		11		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-03-26-19h-17m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-03-19T00	1		1		0		0
+2020-03-20T00	19		5		0		0
+2020-03-21T00	14		4		1		1
+2020-03-22T00	7		3		0		0
+2020-03-23T00	6		5		1		1
+2020-03-24T00	5		2		0		0
+2020-03-25T00	1		1		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		53		21		2		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-04-02-19h-18m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-03-26T00	2		2		1		1
+2020-03-27T00	2		2		0		0
+2020-03-28T00	1		1		1		1
+2020-03-29T00	0		0		0		0
+2020-03-30T00	0		0		0		0
+2020-03-31T00	1		1		0		0
+2020-04-01T00	8		4		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		14		10		3		3
+
+
+--------- 
+GitHub statistics for the past week as of 2020-04-09-19h-19m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-04-02T00	4		4		0		0
+2020-04-03T00	3		3		0		0
+2020-04-04T00	10		2		0		0
+2020-04-05T00	10		3		1		1
+2020-04-06T00	0		0		0		0
+2020-04-07T00	2		1		1		1
+2020-04-08T00	8		5		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		37		18		2		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-04-16-19h-19m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-04-09T00	8		3		0		0
+2020-04-10T00	3		3		1		1
+2020-04-11T00	1		1		1		1
+2020-04-12T00	0		0		0		0
+2020-04-13T00	10		5		1		1
+2020-04-14T00	5		3		0		0
+2020-04-15T00	11		8		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		38		23		4		4
+
+
+--------- 
+GitHub statistics for the past week as of 2020-04-23-19h-19m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-04-16T00	7		4		1		1
+2020-04-17T00	11		3		1		1
+2020-04-18T00	1		1		0		0
+2020-04-19T00	4		3		0		0
+2020-04-20T00	8		2		0		0
+2020-04-21T00	16		3		0		0
+2020-04-22T00	0		0		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		47		16		2		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-04-30-19h-20m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-04-23T00	7		1		1		1
+2020-04-24T00	5		4		0		0
+2020-04-25T00	2		2		0		0
+2020-04-26T00	0		0		0		0
+2020-04-27T00	5		2		0		0
+2020-04-28T00	0		0		0		0
+2020-04-29T00	24		5		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		43		14		2		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-05-07-19h-20m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-04-30T00	6		2		1		1
+2020-05-01T00	7		4		0		0
+2020-05-02T00	1		1		0		0
+2020-05-03T00	8		5		0		0
+2020-05-04T00	6		2		0		0
+2020-05-05T00	13		5		2		1
+2020-05-06T00	22		4		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		63		23		3		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-05-14-19h-20m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-05-07T00	14		5		0		0
+2020-05-08T00	11		4		0		0
+2020-05-09T00	4		3		3		1
+2020-05-10T00	22		5		0		0
+2020-05-11T00	11		5		1		1
+2020-05-12T00	1		1		0		0
+2020-05-13T00	13		4		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		76		27		4		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-05-21-19h-21m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-05-14T00	2		2		0		0
+2020-05-15T00	4		3		0		0
+2020-05-16T00	1		1		0		0
+2020-05-17T00	21		6		0		0
+2020-05-18T00	0		0		1		1
+2020-05-19T00	1		1		0		0
+2020-05-20T00	0		0		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		29		13		2		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-05-28-19h-21m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-05-21T00	9		4		0		0
+2020-05-22T00	2		2		2		2
+2020-05-23T00	2		2		1		1
+2020-05-24T00	17		7		0		0
+2020-05-25T00	9		3		0		0
+2020-05-26T00	19		10		2		1
+2020-05-27T00	8		3		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		66		31		5		4
+
+
+--------- 
+GitHub statistics for the past week as of 2020-06-04-19h-22m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-05-28T00	6		6		1		1
+2020-05-29T00	0		0		0		0
+2020-05-30T00	3		3		0		0
+2020-05-31T00	9		2		4		3
+2020-06-01T00	1		1		2		2
+2020-06-02T00	2		2		0		0
+2020-06-03T00	4		3		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		25		17		8		7
+
+
+--------- 
+GitHub statistics for the past week as of 2020-06-11-19h-22m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-06-04T00	10		4		0		0
+2020-06-05T00	23		4		0		0
+2020-06-06T00	12		3		0		0
+2020-06-07T00	13		4		0		0
+2020-06-08T00	11		5		0		0
+2020-06-09T00	20		6		0		0
+2020-06-10T00	3		2		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		92		28		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-06-18-19h-23m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-06-11T00	5		2		1		1
+2020-06-12T00	4		3		0		0
+2020-06-13T00	12		2		0		0
+2020-06-14T00	26		3		4		1
+2020-06-15T00	3		3		2		2
+2020-06-16T00	3		2		0		0
+2020-06-17T00	1		1		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		54		16		7		4
+
+
+--------- 
+GitHub statistics for the past week as of 2020-06-25-19h-23m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-06-18T00	2		2		0		0
+2020-06-19T00	3		3		0		0
+2020-06-20T00	9		2		0		0
+2020-06-21T00	5		3		0		0
+2020-06-22T00	14		3		0		0
+2020-06-23T00	1		1		0		0
+2020-06-24T00	0		0		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		34		14		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-07-02-19h-24m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-06-25T00	7		3		0		0
+2020-06-26T00	3		3		0		0
+2020-06-27T00	74		7		0		0
+2020-06-28T00	1		1		0		0
+2020-06-29T00	3		3		0		0
+2020-06-30T00	3		3		0		0
+2020-07-01T00	5		1		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		96		21		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-07-09-19h-24m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-07-02T00	21		5		0		0
+2020-07-03T00	2		2		0		0
+2020-07-04T00	3		2		0		0
+2020-07-05T00	9		4		0		0
+2020-07-06T00	25		5		2		1
+2020-07-07T00	5		5		0		0
+2020-07-08T00	1		1		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		66		24		2		1
+
+
+--------- 
+GitHub statistics for the past week as of 2020-07-16-19h-24m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-07-09T00	11		5		0		0
+2020-07-10T00	6		3		0		0
+2020-07-11T00	7		3		0		0
+2020-07-12T00	2		2		0		0
+2020-07-13T00	12		3		0		0
+2020-07-14T00	8		4		0		0
+2020-07-15T00	9		1		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		55		21		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-07-23-19h-26m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-07-16T00	18		4		0		0
+2020-07-17T00	7		3		1		1
+2020-07-18T00	2		2		1		1
+2020-07-19T00	5		3		0		0
+2020-07-20T00	23		7		0		0
+2020-07-21T00	1		1		1		1
+2020-07-22T00	3		3		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		59		23		3		3
+
+
+--------- 
+GitHub statistics for the past week as of 2020-07-30-19h-26m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-07-23T00	2		1		1		1
+2020-07-24T00	1		1		0		0
+2020-07-25T00	1		1		0		0
+2020-07-26T00	11		4		1		1
+2020-07-27T00	10		3		0		0
+2020-07-28T00	3		3		0		0
+2020-07-29T00	6		3		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		34		16		2		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-08-06-19h-26m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-07-30T00	3		3		0		0
+2020-07-31T00	17		2		1		1
+2020-08-01T00	2		2		0		0
+2020-08-02T00	0		0		0		0
+2020-08-03T00	2		2		0		0
+2020-08-04T00	1		1		0		0
+2020-08-05T00	0		0		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		25		10		1		1
+
+
+--------- 
+GitHub statistics for the past week as of 2020-08-13-19h-27m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-08-06T00	2		2		0		0
+2020-08-07T00	6		4		0		0
+2020-08-08T00	0		0		0		0
+2020-08-09T00	3		2		0		0
+2020-08-10T00	14		6		0		0
+2020-08-11T00	27		1		0		0
+2020-08-12T00	13		4		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		65		19		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-08-20-19h-27m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-08-13T00	3		2		0		0
+2020-08-14T00	22		5		3		3
+2020-08-15T00	9		3		1		1
+2020-08-16T00	0		0		0		0
+2020-08-17T00	4		4		0		0
+2020-08-18T00	5		4		1		1
+2020-08-19T00	10		2		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		53		20		6		6
+
+
+--------- 
+GitHub statistics for the past week as of 2020-08-27-19h-28m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-08-20T00	7		3		1		1
+2020-08-21T00	11		6		0		0
+2020-08-22T00	8		5		0		0
+2020-08-23T00	8		5		0		0
+2020-08-24T00	27		4		0		0
+2020-08-25T00	8		4		0		0
+2020-08-26T00	24		8		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		93		35		1		1
+
+
+--------- 
+GitHub statistics for the past week as of 2020-09-03-19h-29m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-08-27T00	8		4		0		0
+2020-08-28T00	4		4		0		0
+2020-08-29T00	0		0		2		1
+2020-08-30T00	5		3		0		0
+2020-08-31T00	5		3		0		0
+2020-09-01T00	6		3		1		1
+2020-09-02T00	6		3		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		34		20		3		2
+
+
+--------- 
+GitHub statistics for the past week as of 2020-09-10-19h-29m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-09-03T00	8		3		0		0
+2020-09-04T00	0		0		0		0
+2020-09-05T00	19		3		0		0
+2020-09-06T00	1		1		0		0
+2020-09-07T00	6		2		0		0
+2020-09-08T00	1		1		0		0
+2020-09-09T00	5		3		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		40		13		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-09-17-19h-30m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-09-10T00	15		7		0		0
+2020-09-11T00	1		1		0		0
+2020-09-12T00	0		0		0		0
+2020-09-13T00	0		0		0		0
+2020-09-14T00	13		2		0		0
+2020-09-15T00	4		4		0		0
+2020-09-16T00	32		5		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		65		19		0		0
+
+
+--------- 
+GitHub statistics for the past week as of 2020-09-24-19h-30m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-09-17T00	34		7		0		0
+2020-09-18T00	3		2		0		0
+2020-09-19T00	1		1		1		1
+2020-09-20T00	1		1		0		0
+2020-09-21T00	18		5		0		0
+2020-09-22T00	39		3		0		0
+2020-09-23T00	25		4		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		121		23		1		1
+
+
+--------- 
+GitHub statistics for the past week as of 2020-10-01-19h-32m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-09-24T00	3		3		1		1
+2020-09-25T00	4		3		0		0
+2020-09-26T00	6		3		0		0
+2020-09-27T00	4		4		0		0
+2020-09-28T00	2		2		0		0
+2020-09-29T00	7		3		0		0
+2020-09-30T00	12		6		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		38		24		1		1
+
+
+--------- 
+GitHub statistics for the past week as of 2020-10-08-19h-32m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-10-01T00	2		1		0		0
+2020-10-02T00	10		3		0		0
+2020-10-03T00	14		3		0		0
+2020-10-04T00	2		2		0		0
+2020-10-05T00	13		3		0		0
+2020-10-06T00	0		0		0		0
+2020-10-07T00	7		3		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		48		15		1		1
+
+
+--------- 
+GitHub statistics for the past week as of 2020-10-15-19h-33m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-10-08T00	19		9		0		0
+2020-10-09T00	25		4		0		0
+2020-10-10T00	1		1		0		0
+2020-10-11T00	17		8		0		0
+2020-10-12T00	1		1		0		0
+2020-10-13T00	5		1		0		0
+2020-10-14T00	8		2		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		76		26		0		0
+

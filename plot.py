@@ -96,7 +96,7 @@ def get_all_weekly_stats(db, dates, col):
     return df
 
 def area_plot(df, title, fontsize=None, saveas=None):
-    fig, ax = plt.subplots(figsize=(8,6))
+    fig, ax = plt.subplots(figsize=(10,6))
     plt.tick_params(axis='both', which='major', labelsize=fontsize)
     fig.autofmt_xdate()
     cumsum_bottom = np.zeros(df.shape[0])
