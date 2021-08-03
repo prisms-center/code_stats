@@ -9,6 +9,9 @@ import os
 import pandas
 from code_stats import GithubStats, TravisStats
 
+import pandas.plotting
+pandas.plotting.register_matplotlib_converters()
+
 # repos = {
 #     "prisms-center/phaseField": "PRISMS-PF",
 #     "prisms-center/plasticity": "Plasticity",
@@ -19,7 +22,7 @@ from code_stats import GithubStats, TravisStats
 #     "dftfeDevelopers/dftfe": "DFT-FE"}
 
 area_plot_fmt = [
-    ("prisms-center/IntegrationTools", "IntegrationTools", 'red'),
+    #("prisms-center/IntegrationTools", "IntegrationTools", 'red'),
     ("prisms-center/prisms_jobs", "PRISMS Jobs", 'orange'),
     ("prisms-center/CASMcode", "CASM", 'yellow'),
     ("prisms-center/phaseField", "PRISMS-PF", 'green'),
@@ -28,6 +31,27 @@ area_plot_fmt = [
 ]
 legend_values = [val[1] for val in area_plot_fmt]
 legend_values.reverse()
+
+reference_weeks = [ datetime.date.fromisoformat(x) for x in [
+    '2020-08-28', # before
+    '2020-09-04',
+    '2020-09-11',
+    '2020-09-18',
+    '2020-09-25',
+    '2020-10-02',
+    '2020-10-09',
+    '2020-10-16',
+    '2021-05-28', #after
+    '2021-06-04',
+    '2021-06-11',
+    '2021-06-18',
+    '2021-06-25',
+    '2021-07-02',
+    '2021-07-09',
+    '2021-07-16']
+]
+replacement_weeks_first = datetime.date.fromisoformat('2020-10-23')
+replacement_weeks_last = datetime.date.fromisoformat('2021-05-21')
 
 def sql_iter(curs, fetchsize=1000):
     """ Iterate over the results of a SELECT statement """
@@ -85,7 +109,8 @@ def get_weekly_stats(curs, dates, col):
             raise e
     return result
 
-def get_all_weekly_stats(db, dates, col):
+def get_all_weekly_stats(db, dates, col, estimate_missing = True):
+    repo_names = [entry[0] for entry in area_plot_fmt]
     df = pandas.DataFrame(index=dates, columns=db.list_repo_names())
     for repo_name in db.list_repo_names():
         curs = db.conn.cursor()
@@ -93,6 +118,14 @@ def get_all_weekly_stats(db, dates, col):
         weekly_unique_views = get_weekly_stats(curs, dates, col)
         curs.close()
         df.loc[:, repo_name] = weekly_unique_views
+
+        if estimate_missing:
+            reference_weeks_mean = np.mean(df.loc[reference_weeks, repo_name])
+
+            for index, row in df.iterrows():
+                if index >= replacement_weeks_first and index <= replacement_weeks_last:
+                    df.loc[index,repo_name] = reference_weeks_mean
+
     return df
 
 def area_plot(df, title, fontsize=None, saveas=None):
@@ -149,6 +182,19 @@ def make_plots_excluding_travis_builds(db, dates, colname, title, fontsize=None)
     area_plot(df.cumsum(), "Cumulative " + title, fontsize=fontsize, saveas="images/" + colname + "_cumulative_exclude_travis_builds.png")
 
 
+def print_data_by_week(db, repo_name, col):
+    dates = get_weekly_dates(db)
+    df = pandas.DataFrame(index=dates, columns=[repo_name])
+    for repo_name in [repo_name]:
+        curs = db.conn.cursor()
+        curs.execute("SELECT day, " + col + " FROM stats WHERE repo_id=? ORDER BY day", ( db.get_repo_id(repo_name),))
+        weekly_stats = get_weekly_stats(curs, dates, col)
+        curs.close()
+        df.loc[:, repo_name] = weekly_stats
+    for i in range(df.shape[0]):
+        print(dates[i], df[repo_name][i])
+
+
 db = GithubStats()
 db.connect()
 dates = get_weekly_dates(db)
@@ -157,6 +203,8 @@ if not os.path.exists("images"):
     os.mkdir("images")
 
 fontsize = 14
+
+# print_data_by_week(db, "prisms-center/CASMcode", 'views')
 
 make_plots(db, dates, 'views', 'Weekly Views', fontsize=fontsize)
 make_plots(db, dates, 'unique_views', 'Weekly Unique Views', fontsize=fontsize)

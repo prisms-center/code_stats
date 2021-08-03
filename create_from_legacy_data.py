@@ -82,7 +82,7 @@ def create_from_legacy(orgname, repos, f):
     #     db.print_stats(repo_name)
     db.close()
 
-for orgname in orgs:
+for orgname in ["dftfeDevelopers"]:
     org = orgs[orgname]
     with open(org["file"], 'r') as f:
         create_from_legacy(orgname, org["repos"], f)
