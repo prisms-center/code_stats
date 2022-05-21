@@ -2543,3 +2543,93 @@ dftfe  Total Statistics:
 		Visits		Unique Visits	Clones		Unique Clones
 		60		24		1		1
 
+
+--------- 
+GitHub statistics for the past week as of 2021-10-02-04h-39m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2021-09-25T00	51		14		0		0
+2021-09-26T00	55		13		1		1
+2021-09-27T00	36		17		0		0
+2021-09-28T00	67		19		1		1
+2021-09-29T00	14		11		2		2
+2021-09-30T00	65		9		0		0
+2021-10-01T00	36		9		6		5
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		324		92		10		9
+
+
+--------- 
+GitHub statistics for the past week as of 2021-10-07-20h-02m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2021-09-30T00	65		9		0		0
+2021-10-01T00	36		9		6		5
+2021-10-02T00	67		8		1		1
+2021-10-03T00	8		6		0		0
+2021-10-04T00	15		9		3		1
+2021-10-05T00	28		7		3		3
+2021-10-06T00	45		5		3		3
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		264		53		16		13
+
+
+--------- 
+GitHub statistics for the past week as of 2021-10-14-20h-03m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2021-10-07T00	29		7		0		0
+2021-10-08T00	21		4		0		0
+2021-10-09T00	3		1		2		2
+2021-10-10T00	23		5		0		0
+2021-10-11T00	13		7		1		1
+2021-10-12T00	73		8		1		1
+2021-10-13T00	53		5		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		215		37		4		4
+
+
+--------- 
+GitHub statistics for the past week as of 2021-10-21-20h-04m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2021-10-14T00	24		7		1		1
+2021-10-15T00	23		6		0		0
+2021-10-16T00	22		6		1		1
+2021-10-17T00	11		5		0		0
+2021-10-18T00	18		5		1		1
+2021-10-19T00	42		3		3		3
+2021-10-20T00	0		0		1		1
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		140		32		7		7
+
+
+--------- 
+GitHub statistics for the past week as of 2021-10-28-20h-04m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2021-10-21T00	7		3		17		3
+2021-10-22T00	55		3		6		1
+2021-10-23T00	2		1		11		3
+2021-10-24T00	219		6		65		8
+2021-10-25T00	76		11		0		0
+2021-10-26T00	42		2		8		2
+2021-10-27T00	29		7		6		2
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		430		33		113		19
+
