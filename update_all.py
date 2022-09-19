@@ -7,7 +7,7 @@ repos = [
     "prisms-center/pbs",
     "prisms-center/prisms_jobs",
     "prisms-center/IntegrationTools",
-    "prisms-center/Fatigue"
+    "prisms-center/Fatigue",
     "dftfeDevelopers/dftfe"]
 
 def update_all(db_cls, repos):
