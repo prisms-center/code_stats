@@ -20,7 +20,7 @@ def fromisoformat(d):
     if hasattr(datetime.date, 'fromisoformat'):
         return datetime.date.fromisoformat(d)
     sd = datetime.datetime.strptime(d, "%Y-%m-%d")
-    return datetime.datetime.combine(sd, datetime.datetime.min.time())
+    return sd.date()
 
 
 # repos = {
