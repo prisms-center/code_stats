@@ -17,7 +17,7 @@ pandas.plotting.register_matplotlib_converters()
 
 
 def fromisoformat(d):
-    if hasattr(datetime.date, 'fromisoformat') and inspect.isfunction(datetime.date.fromisoformat):
+    if hasattr(datetime.date, 'fromisoformat'):
         return datetime.date.fromisoformat(d)
     return datetime.strptime(d, "%Y-%m-%d")
 
