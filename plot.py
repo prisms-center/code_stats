@@ -6,6 +6,7 @@ import code_stats as cs
 import copy
 import datetime
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 import numpy as np
 import os
 import pandas
@@ -219,16 +220,18 @@ def area_plot(df, title, fontsize=None, saveas=None):
     cumsum_bottom = np.zeros(df.shape[0])
     linewidth = 2
     legend_handles = []
+    date = np.array(df.index.values, dtype=np.datetime64)
     for val in area_plot_fmt:
         repo_name = val[0]
         facecolor = val[2]
-        cumsum_top = cumsum_bottom + df.loc[:, repo_name]
-        h1 = ax.fill_between(df.index.values, cumsum_bottom, cumsum_top, facecolor=facecolor)
-        h2 = ax.plot(df.index.values, cumsum_top, color='black', linewidth=1)
+        cumsum_top = cumsum_bottom + np.array(df.loc[:, repo_name], dtype=np.float64)
+
+        h1 = ax.fill_between(date, cumsum_bottom, cumsum_top, facecolor=facecolor)
+        h2 = ax.plot(date, cumsum_top, color='black', linewidth=1)
         h3 = ax.fill(np.NaN, np.NaN, facecolor=facecolor, linewidth=0.0)
         legend_handles.append((h3[0],))
         cumsum_bottom = copy.deepcopy(cumsum_top)
-    ax.plot(df.index.values, np.zeros(df.shape[0]), color='black', linewidth=1, label=None)
+    ax.plot(date, np.zeros(df.shape[0]), color='black', linewidth=1, label=None)
     # ax.set_title(title, fontsize=fontsize)
     ax.set_ylabel(title, fontsize=fontsize)
     # ax.set_xlabel("Updated:" + str(datetime.date.today()), fontsize=fontsize)
@@ -240,15 +243,19 @@ def area_plot(df, title, fontsize=None, saveas=None):
 
 
 def make_plots(db, dates, colname, title, fontsize=None):
-    df = get_all_weekly_stats(db, dates, colname)
+    df = get_all_weekly_stats(db, dates, colname, estimate_missing=False)
     df.loc[:, "prisms-center/prisms_jobs"] += df.loc[:, "prisms-center/pbs"]
     df = df.drop(axis='columns', labels="prisms-center/pbs")
-
     area_plot(df, title, fontsize=fontsize, saveas="images/" + colname + ".png")
     print(title, colname)
     dfc = df.cumsum()
     for col in dfc.columns:
-        print(dfc[col])
+        # print(dfc[col])
+        print(f"~~~ {col} ~~~")
+        for i in range(df.shape[0]):
+            print(dfc.index[i], df[col][i], sum(df[col][:i]))
+        print()
+
     area_plot(df.cumsum(), "Cumulative " + title, fontsize=fontsize, saveas="images/" + colname + "_cumulative.png")
 
 
@@ -283,7 +290,7 @@ def print_data_by_week(db, repo_name, col):
         curs.close()
         df.loc[:, repo_name] = weekly_stats
     for i in range(df.shape[0]):
-        print(dates[i], df[repo_name][i])
+        print(dates[i], df[repo_name][i], sum(df[repo_name][:i]))
 
 
 db = GithubStats()
@@ -298,12 +305,14 @@ fontsize = 14
 # prisms-center/CASMcode
 # prisms-center/phaseField
 # dftfeDevelopers/dftfe
-print_data_by_week(db, "dftfeDevelopers/dftfe", 'unique_clones')
+#print_data_by_week(db, "dftfeDevelopers/dftfe", 'unique_clones')
+# print_data_by_week(db, "prisms-center/Fatigue", 'views')
+# exit()
 
-make_plots(db, dates, 'views', 'Weekly Views', fontsize=fontsize)
-make_plots(db, dates, 'unique_views', 'Weekly Unique Views', fontsize=fontsize)
+# make_plots(db, dates, 'views', 'Weekly Views', fontsize=fontsize)
+# make_plots(db, dates, 'unique_views', 'Weekly Unique Views', fontsize=fontsize)
 make_plots(db, dates, 'clones', 'Weekly Clones', fontsize=fontsize)
-make_plots(db, dates, 'unique_clones', 'Weekly Unique Clones', fontsize=fontsize)
-make_plots_excluding_travis_builds(db, dates, 'unique_clones', 'Weekly Unique Clones', fontsize=fontsize)
+# make_plots(db, dates, 'unique_clones', 'Weekly Unique Clones', fontsize=fontsize)
+# make_plots_excluding_travis_builds(db, dates, 'unique_clones', 'Weekly Unique Clones', fontsize=fontsize)
 
 db.close()
