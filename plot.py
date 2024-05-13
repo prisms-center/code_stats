@@ -51,15 +51,23 @@ def make_plots(db, dates, colname, title, fontsize=None, estimate_missing=True):
     df.loc[:, "prisms-center/prisms_jobs"] += df.loc[:, "prisms-center/pbs"]
     df = df.drop(axis="columns", labels="prisms-center/pbs")
     area_plot(df, title, fontsize=fontsize, saveas="images/" + colname + ".png")
-    print(title, colname)
     dfc = df.cumsum()
+
+    # print(title, colname)
+    # for col in dfc.columns:
+    #     print(dfc[col])
+    #     print(f"~~~ {col} ~~~")
+    #     for i in range(df.shape[0]):
+    #         print(dfc.index[i], df[col][i], sum(df[col][:i]))
+    #     print()
+
+    header = f"Cumulative {title} {dfc.index[-1]}"
+    print(header)
+    print("~" * len(header))
     for col in dfc.columns:
-        print(dfc[col])
-        print(f"~~~ {col} ~~~")
-        for i in range(df.shape[0]):
-            print(dfc.index[i], df[col][i], sum(df[col][:i]))
-        print()
-        # print(f"{col}: ", dfc.index[-1], df[col][-1], sum(df[col]))
+        print(f"{col}: ", dfc[col].iloc[-1])
+    print("--> Sum:", sum(dfc.iloc[-1, :]))
+    print()
 
     area_plot(
         df.cumsum(),
@@ -93,12 +101,22 @@ def make_plots_excluding_travis_builds(
         saveas="images/" + colname + "_exclude_travis_builds.png",
         fontsize=fontsize,
     )
+
+    dfc = df.cumsum()
     area_plot(
-        df.cumsum(),
+        dfc,
         "Cumulative " + title,
         fontsize=fontsize,
         saveas="images/" + colname + "_cumulative_exclude_travis_builds.png",
     )
+
+    header = f"Cumulative {title} (Excluding travis builds) {dfc.index[-1]}"
+    print(header)
+    print("~" * len(header))
+    for col in dfc.columns:
+        print(f"{col}: ", dfc[col].iloc[-1])
+    print("--> Sum:", sum(dfc.iloc[-1, :]))
+    print()
 
 
 def print_data_by_week(db, repo_name, col):
