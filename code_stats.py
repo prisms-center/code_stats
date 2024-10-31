@@ -350,6 +350,8 @@ class TravisStats(StatsBase):
             headers={"Travis-API-Version": "3", "Authorization": "token " + self.token},
         )
         res = r.json()
+        if not res:
+            return None
         repo_ids = {}
         for repo in res["repositories"]:
             repo_ids[repo["slug"]] = str(repo["id"])
@@ -366,6 +368,8 @@ class TravisStats(StatsBase):
                 if travis_ids is None:
                     travis_ids = self.get_travis_ids()
                 # maybe some repos don't get tracked by travis...
+                if not travis_ids:
+                    continue
                 if name not in travis_ids:
                     continue
                 travis_id = int(travis_ids[name])
@@ -391,6 +395,8 @@ class TravisStats(StatsBase):
                 },
             )
             res = r.json()
+            if "builds" not in res:
+                return None
             for build in res["builds"]:
                 if build["started_at"] is not None:
                     started_at = dateutil.parser.parse(build["started_at"])

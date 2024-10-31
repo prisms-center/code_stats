@@ -117,6 +117,15 @@ def make_plots_excluding_travis_builds(
         print(f"{col}: ", dfc[col].iloc[-1])
     print("--> Sum:", sum(dfc.iloc[-1, :]))
     print()
+    with open('cumulative.txt', 'w') as f:
+        f.write(header + "\n")
+        f.write("~" * len(header))
+        f.write("\n")
+        for col in dfc.columns:
+            count = int(dfc[col].iloc[-1])
+            f.write(f"{col}:{count}\n")
+        total_count = int(sum(dfc.iloc[-1, :]))
+        f.write(f"--> Sum: {total_count}\n")
 
 
 def print_data_by_week(db, repo_name, col):
