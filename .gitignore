@@ -1,1 +1,4 @@
 *.pyc
+images
+data
+stats.html
