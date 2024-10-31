@@ -117,16 +117,18 @@ def make_plots_excluding_travis_builds(
         print(f"{col}: ", dfc[col].iloc[-1])
     print("--> Sum:", sum(dfc.iloc[-1, :]))
     print()
-    with open('cumulative.txt', 'w') as f:
-        f.write(header + "\n")
-        f.write("~" * len(header))
-        f.write("\n")
+    with open('stats.html', 'w') as f:
+        f.write('<div class="software-area">\n')
+        f.write('    <img src="assets/code_stats/unique_clones_cumulative_exclude_travis_builds.png">\n')
+        f.write(f"    <h3>{header}</h3>\n")
+        f.write("<ul>\n")
         for col in dfc.columns:
             count = int(dfc[col].iloc[-1])
-            f.write(f"{col}:{count}\n")
+            f.write(f"   <li>{col}:{count}</li>\n")
+        f.write("</ul>\n")
         total_count = int(sum(dfc.iloc[-1, :]))
-        f.write(f"--> Sum: {total_count}\n")
-
+        f.write(f"<span>Total: {total_count}</span>\n")
+        f.write('</div>\n')
 
 def print_data_by_week(db, repo_name, col):
     dates = get_weekly_dates(db)
